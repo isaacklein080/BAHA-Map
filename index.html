@@ -2,18 +2,34 @@
 <html lang="en">
 
   <head>
-    <meta charset="UTF-8">
-    <title>Week 10 Lab Map Geog 183</title>
-    <link rel="stylesheet" href="./style.css">
-
-  </head>
+  <meta charset="UTF-8">
+  <title>Week 10 Lab Map Geog 183</title>
+  <link rel="stylesheet" href="./style.css">
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.css'>
+</head>
     
   <body>
-  <div id="map">
-</div>
-<script src='https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.js'></script>
-    <script  src="./script.js"></script>
+    <h1 class="map-heading">Cultural Landmarks in Berkeley</h1>
+    <h2 class="map-subtitle">Cartographer: Isaac Klein | 2025 | Data: Berkeley Architectural Heritage Association</h2>
 
+<button id="data-info-btn" class="data-info-button">📊 Data Context</button>
+
+<div id="data-panel" class="data-panel">
+  <button class="close-panel">✕</button>
+  <h3>About This Data</h3>
+  <p><strong>Source:</strong> Berkeley Architectural Heritage Association (BAHA)</p>
+  <p><strong>What's Included:</strong> This map displays officially designated historic landmarks. However, it's important to recognize what's <em>not</em> shown:</p>
+  <ul>
+    <li>Undesignated sites significant to Indigenous Ohlone communities</li>
+    <li>Places important to communities of color that lack official recognition</li>
+    <li>Recent cultural sites not yet considered "historic"</li>
+  </ul>
+  <p><strong>Critical Note:</strong> Historic preservation often reflects the perspectives and values of those in power. This map represents <em>one narrative</em> of Berkeley's cultural significance.</p>
+</div>
+
+    <div id="map"></div>
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v3.15.0/mapbox-gl.js"></script>
+    <script src="./script.js"></script>
   </body>
-  
 </html>
